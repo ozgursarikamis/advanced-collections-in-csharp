@@ -15,7 +15,9 @@ namespace TourBooker.Logic
 			AllCountries = reader.ReadAllCountries().OrderBy(x => x.Name)
                 .ToList();
 
-            AllCountriesByKey = AllCountries.ToDictionary(x => x.Code, StringComparer.OrdinalIgnoreCase);
+            var countriesDictionary = AllCountries.ToDictionary(x => x.Code, StringComparer.OrdinalIgnoreCase);
+			
+            AllCountriesByKey = new Dictionary<string, Country>(countriesDictionary);
         }
 	}
 }
