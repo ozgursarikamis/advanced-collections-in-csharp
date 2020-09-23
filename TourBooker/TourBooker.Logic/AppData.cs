@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace TourBooker.Logic
@@ -7,7 +6,7 @@ namespace TourBooker.Logic
 	public class AppData
 	{
 		public List<Country> AllCountries { get; private set; }
-        public Dictionary<string, Country> AllCountriesByKey { get; set; }
+        public Dictionary<CountryCode, Country> AllCountriesByKey { get; private set; }
 
 		public void Initialize(string csvFilePath)
 		{
@@ -15,9 +14,8 @@ namespace TourBooker.Logic
 			AllCountries = reader.ReadAllCountries().OrderBy(x => x.Name)
                 .ToList();
 
-            var countriesDictionary = AllCountries.ToDictionary(x => x.Code, StringComparer.OrdinalIgnoreCase);
-			
-            AllCountriesByKey = new Dictionary<string, Country>(countriesDictionary);
+            var countriesDictionary = AllCountries.ToDictionary(x => x.Code);
+            AllCountriesByKey = countriesDictionary;
         }
 	}
 }
