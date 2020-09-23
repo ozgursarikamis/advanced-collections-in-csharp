@@ -7,39 +7,28 @@ namespace Collections.LinkedLists
     {
         private static void Main()
         {
-            LinkedListNode<string> node = new LinkedListNode<string>("orange");
-            DisplayProperties(node);
+            string[] students = { "Jenifer", "Angelina", "Vera" };
+            LinkedList<string> list = new LinkedList<string>(students);
+            IterateLists(list);
 
-            LinkedList<string> ll = new LinkedList<string>();
-            ll.AddLast(node);
-            Console.WriteLine("After adding node to the empty LinkedList");
-            DisplayProperties(node);
+            list.AddFirst("Natalie");
+            IterateLists(list);
 
-            ll.AddFirst("red");
-            ll.AddLast("yellow");
-
-            Console.WriteLine("After adding red and yellow");
-            DisplayProperties(node);
+            var jeniferNode = list.Find("Jenifer") ?? throw new InvalidOperationException();
+            list.AddAfter(jeniferNode, "(After Jenifer)");
+            IterateLists(list);
 
             Console.ReadLine();
         }
 
-        private static void DisplayProperties(LinkedListNode<string> node)
+        private static void IterateLists(LinkedList<string> linkedList)
         {
             Console.WriteLine();
-            Console.WriteLine(node.List == null
-                ? "Node is not linked"
-                : $"Node belongs to a linked list with {node.List.Count} item(s)");
 
-            Console.WriteLine(node.Previous == null
-                ? "this is the first node"
-                : $"Value of previous node is {node.Previous.Value}");
-
-            Console.WriteLine($"Value of the current node: {node.Value}");
-
-            Console.WriteLine(node.Next == null 
-                ? "This is the last node"
-                : $"Value of next node: {node.Next.Value}");
+            foreach (var item in linkedList)
+            {
+                Console.WriteLine($"\t {item}");
+            }
 
             Console.WriteLine();
         }
