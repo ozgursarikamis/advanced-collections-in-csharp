@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace TourBooker.Logic
@@ -14,7 +15,7 @@ namespace TourBooker.Logic
 			AllCountries = reader.ReadAllCountries().OrderBy(x => x.Name)
                 .ToList();
 
-            AllCountriesByKey = AllCountries.ToDictionary(x => x.Code);
+            AllCountriesByKey = AllCountries.ToDictionary(x => x.Code, StringComparer.OrdinalIgnoreCase);
         }
 	}
 }
