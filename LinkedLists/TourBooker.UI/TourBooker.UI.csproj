@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TourBooker.Logic\TourBooker.Logic.csproj">
-      <Project>{77bb6516-4e38-4461-8ccd-02c12ff7d0e2}</Project>
+      <Project>{da8ba7bd-cf64-42cc-ae7b-25437425b642}</Project>
       <Name>TourBooker.Logic</Name>
     </ProjectReference>
   </ItemGroup>
