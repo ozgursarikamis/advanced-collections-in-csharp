@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TourBooker", "TourBooker", "{AB2CDEB3-E511-4407-A843-2B816098BABF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dictionaries", "Dictionaries", "{AB2CDEB3-E511-4407-A843-2B816098BABF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourBooker.Logic", "TourBooker\TourBooker.Logic\TourBooker.Logic.csproj", "{77BB6516-4E38-4461-8CCD-02C12FF7D0E2}"
 EndProject
