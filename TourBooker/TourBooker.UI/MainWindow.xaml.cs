@@ -30,7 +30,8 @@ namespace TourBooker.UI
 
 		private Country GetCountryWithCode(string code)
 		{
-			return code.Length != 3 ? null : AllData.AllCountries.Find(x => x.Code == code);
-		}
+			//return code.Length != 3 ? null : AllData.AllCountries.Find(x => x.Code == code);
+            return code.Length != 3 ? null : AllData.AllCountriesByKey[code];
+        }
 	}
 }
