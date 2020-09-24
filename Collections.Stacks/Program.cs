@@ -27,6 +27,17 @@ namespace Collections.Stacks
             {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine();
+            Console.WriteLine(stack.Peek());
+            Console.WriteLine(stack.Peek());
+            Console.WriteLine(stack.Contains(5));
+
+            stack.Push(5);
+            Console.WriteLine(stack.Contains(5));
+
+            stack.Pop();
+            Console.WriteLine(stack.Contains(5));
         }
     }
 }
