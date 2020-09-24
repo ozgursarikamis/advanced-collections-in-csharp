@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourBooker.Logic", "Diction
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourBooker.UI", "Dictionaries\TourBooker.UI\TourBooker.UI.csproj", "{D021A1A5-6FC2-4C7C-8E13-9D8228461CD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections.LinkedLists", "Collections.LinkedLists\Collections.LinkedLists.csproj", "{FEC58B93-420F-4871-8709-1073DFF0B408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections.LinkedLists", "Collections.LinkedLists\Collections.LinkedLists.csproj", "{FEC58B93-420F-4871-8709-1073DFF0B408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections.Stacks", "Collections.Stacks\Collections.Stacks.csproj", "{0F0F51BA-7A15-4011-852A-B89BDBDFEC41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{FEC58B93-420F-4871-8709-1073DFF0B408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEC58B93-420F-4871-8709-1073DFF0B408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEC58B93-420F-4871-8709-1073DFF0B408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0F51BA-7A15-4011-852A-B89BDBDFEC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0F51BA-7A15-4011-852A-B89BDBDFEC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0F51BA-7A15-4011-852A-B89BDBDFEC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0F51BA-7A15-4011-852A-B89BDBDFEC41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
